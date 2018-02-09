@@ -1,0 +1,3 @@
+imgur
+client ID: 20b53ab0c798d43
+client secret: eed3c4496f768a2e48f6bc4feb57092237f4f42b

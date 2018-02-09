@@ -21,19 +21,31 @@
     </div>
     <div class="main">
         <div class="products">
-            <p>Products go here.</p>
+            <div class="product" v-for="(item, index) in items">
+                <h4 class="product-title">{{ item.title }}</h4>
+                <button v-on:click="addItemToCart(index)" class="add-to-cart">Add to cart</button>
+            </div>
         </div>
         <div class="cart">
             <h2>Shopping Cart</h2>
+            <ul v-if="cart.length != 0">
+                <li class="cart-item" v-for="item in cart">
+                    <div class="item-title">{{ item.title }}</div>
+                    <span class="item-qty">{{ item.qty }}</span>
+                    Price: <span>{{ item.price }}</span>
+                </li>
+            </ul>
             <div>
-                No items in the cart.
+                <div v-if="!total">The cart is empty</div>
+                <div v-else>Total: {{ total }}</div>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Scripts -->
-<script src="reload/reload.js"></script>
+<script src="reload/reload.js"></script><!--just for dev-->
+<script src="node_modules/vue/dist/vue.js"></script>
 <script type="text/javascript" src="public/script.js"></script>
 
 </body>
