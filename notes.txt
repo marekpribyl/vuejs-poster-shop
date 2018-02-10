@@ -1,3 +1,8 @@
-imgur
-client ID: 20b53ab0c798d43
-client secret: eed3c4496f768a2e48f6bc4feb57092237f4f42b
+v-bind
+v-model
+@click
+formatters
+vue-resource - fro http requests
+lifecycle hooks - created, mounted, updated, destroyed
+transitions, transition-group - item, list
+list rendering - v-bind:key
