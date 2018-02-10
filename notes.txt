@@ -6,3 +6,5 @@ vue-resource - fro http requests
 lifecycle hooks - created, mounted, updated, destroyed
 transitions, transition-group - item, list
 list rendering - v-bind:key
+computed properties
+v-cloak
